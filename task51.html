@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+  }</style>
+  <style>
+    header {
+  background: #333;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  
+
+}
+
+header h1 {
+  margin: 0;
+  
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color:blue;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: violet;
+  padding: 40px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.card {
+  width: 25%;
+  background: #b93434;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+footer {
+  background:blue;
+  color:blue(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+}
+
+#ptag::before{
+
+    content: "this is desktop view";
+
+}
+
+
+.mobile-header{
+    visibility: hidden;
+}
+
+
+
+@media (max-width: 500px) {
+  </style>
+  <style>
+    h1  {
+         width: 50%;
+         background: #fa7b7b;
+         padding: 20px;
+         border-radius: 10px;
+         text-align: center;
+         margin-left: 200px;
+    }
+    </style>
+    <h1>Staff Selectin Commite</h1>
+  
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Careers</a>
+      <a href="#">jion us</a>
+      <a href="#">RTI</a>
+      
+    </nav>
+  </header>
+
+
+ <main>
+    <style>
+        .mobile-header{
+    visibility: visible;
+    display: flex;
+    top: 0%;
+    left: 0%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    width: auto;
+    left: 0%;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+#ptag::before{
+    content:"this is mobile view";
+}
+
+.desktop-header{
+    visibility: hidden;
+}
+
+}
+</style>
+    <section class="hero">
+      <h2>Welcome to SSC</h2>
+      <p id="ptag"></p>
+    </section>
+    <section class="content">
+      <div class="card">results</div>
+      <div class="card">admit cards</div>
+      <div class="card"> documents</div>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;  copy right 2025 My Website</p>
+  </footer>
+</body>
+</html>
